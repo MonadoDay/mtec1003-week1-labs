@@ -15,32 +15,20 @@ $ ls<ENTER>
 
 Copy and paste the output of ls below.
 ----------
-Applications
-Creative Cloud Files
-Desktop
-Documents
-Downloads
-Evening.Walk.latLong.v01.png
-Evening_Walk_exp_v02.hr.txt
-Library
-Movies
-Music
-OM
-Pictures
-Public
-finitevolume.png
-github
-iCloud Drive (Archive)
-installMacOpenFOAM
-javasharedresources
-lgBin
-louis.goldford@columbia.edu Creative Cloud Files
-startMacOpenFOAM
-venv
-
-
-
-
+d-----         9/13/2021   3:38 PM                .atom
+d-r---          3/4/2021  12:29 PM                3D Objects
+d-r---          3/4/2021  12:29 PM                Contacts
+d-r---          3/4/2021  12:22 PM                Desktop
+d-----         12/4/2018   9:54 PM                Documents
+d-r---         9/18/2021  12:31 PM                Downloads
+d-r---          3/4/2021  12:29 PM                Favorites
+d-r---          3/4/2021  12:29 PM                Links
+d-r---         8/12/2021   7:24 PM                Music
+dar--l          8/3/2021  11:13 AM                OneDrive
+d-r---          3/4/2021  12:29 PM                Saved Games
+d-r---          3/4/2021  12:29 PM                Searches
+d-r---         8/12/2021   7:24 PM                Videos
+-a----         8/24/2021  11:20 PM            111 .bash_history
 
 ==========
 2.  Type:
@@ -49,10 +37,7 @@ $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
 ----------
-drwx------@  5 louisgoldford2020  staff    160 Jun 12  2020 Applications
-drwx------@  4 louisgoldford2020  staff    128 Jan 11 10:49 Creative Cloud Files
-
-
+It becomes blank and prompts me to the next command. it did not say error.
 
 
 
@@ -63,8 +48,8 @@ $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
 ----------
-.			Adobe			IanniX			OM			Zwift
-..			CU			Ircam			Pd			iZotope
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is
+ambiguous. Possible matches include: -Attributes -Directory -File -Hidden
 
 
 
@@ -77,16 +62,20 @@ $ ls doesnotexist
 
 Copy and paste the output below.
 ----------
-ls: doesnotexist: No such file or directory
-
-
-
+ls : Cannot find path 'C:\Users\rfair\doesnotexist' because it does not exist.
+At line:1 char:1
++ ls doesnotexist
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\rfair\doesnotexist:Stri
+   ng) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChi
+   ldItemCommand
 
 
 ==========
 5.  What key do I press to go to the previous command?
 ----------
-the UP arrow on my keyboard 
+Up Arrow
 
 
 
@@ -96,16 +85,42 @@ the UP arrow on my keyboard
 6.  Name two flags/options that we used in this exercise.
 ----------
 
--l (list the LONG form of all the files)
--a (list ALL files, including the hidden ones!)
-
+-l d-----         9/13/2021   3:38 PM                .atom
+d-r---          3/4/2021  12:29 PM                3D Objects
+d-r---          3/4/2021  12:29 PM                Contacts
+d-r---          3/4/2021  12:22 PM                Desktop
+d-----         12/4/2018   9:54 PM                Documents
+d-r---         9/18/2021  12:31 PM                Downloads
+d-r---          3/4/2021  12:29 PM                Favorites
+d-r---          3/4/2021  12:29 PM                Links
+d-r---         8/12/2021   7:24 PM                Music
+dar--l          8/3/2021  11:13 AM                OneDrive
+d-r---          3/4/2021  12:29 PM                Saved Games
+d-r---          3/4/2021  12:29 PM                Searches
+d-r---         8/12/2021   7:24 PM                Videos
+-a----         8/24/2021  11:20 PM            111 .bash_history
+-a (No files listed)
 
 
 
 ==========
 7.  What was the main command that we used throughout this exercise?
 ----------
-ls (list all them files!! yeehaw!)
+ls d-----         9/13/2021   3:38 PM                .atom
+d-r---          3/4/2021  12:29 PM                3D Objects
+d-r---          3/4/2021  12:29 PM                Contacts
+d-r---          3/4/2021  12:22 PM                Desktop
+d-----         12/4/2018   9:54 PM                Documents
+d-r---         9/18/2021  12:31 PM                Downloads
+d-r---          3/4/2021  12:29 PM                Favorites
+d-r---          3/4/2021  12:29 PM                Links
+d-r---         8/12/2021   7:24 PM                Music
+dar--l          8/3/2021  11:13 AM                OneDrive
+d-r---          3/4/2021  12:29 PM                Saved Games
+d-r---          3/4/2021  12:29 PM                Searches
+d-r---         8/12/2021   7:24 PM                Videos
+-a----         8/24/2021  11:20 PM            111 .bash_history
+
 
 
 
@@ -114,7 +129,6 @@ ls (list all them files!! yeehaw!)
 ==========
 8.  What's one an argument that we've so far passed to a command?
 ----------
-doesnotexist
 Documents
 
 
@@ -128,24 +142,30 @@ $ foo<ENTER>
 
 Copy and paste the output below.
 ----------
--bash: foo: command not found
-
-
-
-
+foo : The term 'foo' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path
+was included, verify that the path is correct and try again.
+At line:1 char:1
++ foo
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (foo:String) [], CommandNotFoundE
+   xception
+    + FullyQualifiedErrorId : CommandNotFoundException
 
 ==========
 10.  Type:
 
 <UP><ENTER>
 
-Copy and paste the output below.
-----------
--bash: foo: command not found
-
-
-
-
+foo : The term 'foo' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path
+was included, verify that the path is correct and try again.
+At line:1 char:1
++ foo
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (foo:String) [], CommandNotFoundE
+   xception
+    + FullyQualifiedErrorId : CommandNotFoundException
 
 ==========
 11.  In the following line....
@@ -157,7 +177,7 @@ Identify the command, flag, argument, and prompt:
 command: ls
 option/flag: -a
 argument: Desktop
-prompt: $ (The prompt is the symbol that tells you the computer is not currently running a command and is "ready" for your input.)
+prompt: >
 
 (Sometimes you may see a % symbol instead of $.)
 
