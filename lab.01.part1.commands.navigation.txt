@@ -196,7 +196,7 @@ Follow the instructions line-by-line.
 12. Open a new terminal window. Create a directory called mtec1003. What command did you use?
 ----------
 
-mkdir
+I closed out and went back in 
 
 
 
@@ -205,7 +205,7 @@ mkdir
 13. Change your directory so that you're in mtec1003. What command did you use?
 ----------
 
-cd 
+<RIGHT-CLICK><OPEN IN WINDOWS TERMINAL> 
 
 
 
@@ -221,10 +221,10 @@ If it doesn't ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-/Users/louisgoldford2020/mtec1003
+C:\Users\rfair\OneDrive\Desktop\mtech1003
 
 
-
+PS C:\Users\rfair\OneDrive\Desktop\mtech1003>
 
 
 ==========
@@ -249,9 +249,9 @@ $ ls
 
 Copy and paste the output below.
 ----------
-animals	food
-
-
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/19/2021   1:21 AM                food
 
 
 
@@ -263,8 +263,10 @@ $ ls
 
 Copy and paste the output below.
 ----------
-animals	foo	food
-
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/19/2021   1:22 AM                foo
+d-----         9/19/2021   1:21 AM                food
 
 (-p flag is RECURSIVE — meaning, recursively NEST one folder inside another...)
 
@@ -277,10 +279,10 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-/Users/louisgoldford2020/mtec1003/foo/bar/baz/qux
+C:\Users\rfair\OneDrive\Desktop\mtech1003\foo\bar\baz\qux
 
 
-
+PS C:\Users\rfair\OneDrive\Desktop\mtech1003\foo\bar\baz\qux>
 
 
 ==========
@@ -292,9 +294,10 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+C:\Users\rfair\OneDrive\Desktop\mtech1003\foo\bar
 
 
-
+PS C:\Users\rfair\OneDrive\Desktop\mtech1003\foo\bar>
 
 
 ==========
@@ -306,10 +309,10 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+C:\Users\rfair\OneDrive\Desktop\mtech1003\foo\bar
 
 
-
-
+PS C:\Users\rfair\OneDrive\Desktop\mtech1003\foo\bar>
 
 ==========
 21. Type:
@@ -320,10 +323,10 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+C:\Users\rfair\OneDrive
 
 
-
-
+PS C:\Users\rfair\OneDrive>
 
 ==========
 22. Type:
@@ -334,10 +337,15 @@ $ ls -l
 
 Copy and paste the first 3 lines from the output into the space below.
 ----------
-
-
-
-
+Get-ChildItem : Missing an argument for parameter 'LiteralPath'.
+Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:4
++ ls -l
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem],
+    ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.
+   Commands.GetChildItemCommand
 
 
 ==========
@@ -350,9 +358,10 @@ Copy and paste the output into the space below.
 ----------
 
 
+C:\Users\rfair
 
 
-
+PS C:\Users\rfair>
 
 ==========
 24. Type:
@@ -363,9 +372,10 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+C:\Users\rfair
 
 
-
+PS C:\Users\rfair>
 
 
 ==========
@@ -378,9 +388,10 @@ Copy and paste the output into the space below.
 ----------
 
 
+C:\Users\rfair
 
 
-
+PS C:\Users\rfair>
 
 ==========
 26. Type:
@@ -391,10 +402,10 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+C:\Users\rfair
 
 
-
-
+PS C:\Users\rfair>
 
 ==========
 27. Type:
@@ -404,18 +415,17 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
-
-
-
+Reggie-Alternative
+PS C:\Users\rfair>
 
 
 ==========
 28. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
-
-
+PS C:\Users\rfair> set-location OneDrive
+PS C:\Users\rfair\OneDrive> set-location Desktop
+PS C:\Users\rfair\OneDrive\Desktop> set-location mtech1003
 
 
 ==========
@@ -512,7 +522,7 @@ What command did you use?
 36. What command is used to delete empty directories?
 ----------
 
-
+../..
 
 
 
@@ -531,7 +541,7 @@ What command did you use?
 ----------
 
 
-
+-a
 
 
 
@@ -540,7 +550,7 @@ What command did you use?
 ----------
 
 
-
+cd ~/
 
 
 
@@ -548,8 +558,7 @@ What command did you use?
 40. What's a pathname?
 ----------
 
-
-
+location of a file
 
 
 
@@ -557,7 +566,7 @@ What command did you use?
 41. What is a directory?
 ----------
 
-
+A location that holds files
 
 
 
@@ -565,3 +574,4 @@ What command did you use?
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+C:\Users\rfair\downloads
