@@ -15,46 +15,46 @@ Feel free to use your workstation to test your answers to the questions that don
 1. Write the command that you would use to change to the root directory.
 ----------
 
-
+cd /
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
 
-
+pwd command
 
 ==========
 3. What's the absolute path to your Desktop directory?
 ----------
 
-
+C:\Users\rfair\downloads
 
 ==========
 4. If you're in your home directory, how would you create a new directory on your desktop
 called stuff without changing your directory?  Write your command below.
 ----------
 
-
+mkdir -v
 
 
 ==========
 5. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
 ----------
 
-
+cd
 
 ==========
 6. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/professor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
 ----------
 
-
+up arrow
 
 ==========
 7. How would you show all of the files (including hidden ones) with detailed (long) information
 for all files on your Desktop — if you're currently in your home directory?  Write your command below.
 ----------
 
-
+$ls
 
 ==========
 Part 2 - Output, Download and Uncompress
@@ -75,6 +75,7 @@ $ echo hello there
 Copy and paste the output below.
 ----------
 
+hello there
 
 
 
@@ -86,7 +87,7 @@ $ echo whoa
 Copy and paste the output below.
 ----------
 
-
+whoa
 
 ==========
 3. Type:
@@ -96,7 +97,7 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
-
+>
 
 ==========
 4. Uh-oh... we're stuck!
@@ -114,7 +115,7 @@ $ echo "good mornin'"
 Copy and paste the output below.
 ----------
 
-
+good mornin'
 
 ==========
 6. There are some other symbols that have special meanings if you don't quote them.
@@ -124,6 +125,7 @@ $ echo *
 
 What happens?
 ----------
+3D Objects AppData Application Data Contacts Cookies Creative Cloud Files Desktop Documents Downloads Favorites IntelGraphicsProfiles Links Local Settings MicrosoftEdgeBackups Music My Documents NTUSER.DAT NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms NetHood OneDrive PrintHood Recent Saved Games Searches SendTo Start Menu Templates Videos ntuser.dat.LOG1 ntuser.dat.LOG2 ntuser.ini
 
 
 
@@ -134,7 +136,7 @@ What happens?
 Write the command that you used below:
 ----------
 
-
+$ clear
 
 ==========
 Downloading files from a web site:  We'll use the following method to download more lab materials!
@@ -149,8 +151,9 @@ $ curl -o mygoogle.html www.google.com
 Now copy and paste the output below.
 ----------
 
-
-
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14633    0 14633    0     0   135k      0 --:--:-- --:--:-- --:--:--  137k
 
 
 
@@ -161,8 +164,9 @@ Now copy and paste the output below.
 Write the command you used to determine your directory. Also, copy and paste the output below.
 ----------
 
+$pwd command 
 
-
+/c/Users/rfair
 
 
 ==========
@@ -172,7 +176,7 @@ Write the command that you used to change to your home directory.
 If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-
+cd~/
 
 ==========
 11. So... the lab materials are located at this url:
@@ -189,6 +193,170 @@ Write down the command(s) that you used to download the file below.
 Finally, write the output of the command below.
 ----------
 
+$ curl http://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/01/my-flashcards.zip
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; styl
+e-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+    <title>Site not found &middot; GitHub Pages</title>
+    <style type="text/css" media="screen">
+      body {
+        background-color: #f1f1f1;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .container { margin: 50px auto 40px auto; width: 600px; text-align: center
+; }
+
+      a { color: #4183c4; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px;
+line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text
+-shadow: 0 1px 0 #fff; }
+      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+
+      ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { display: table-cell; font-weight: bold; width: 1%; }
+
+      .logo { display: inline-block; margin-top: 35px; }
+      .logo-img-2x { display: none; }
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) {
+        .logo-img-1x { display: none; }
+        .logo-img-2x { display: inline-block; }
+      }
+
+      #suggestions {
+        margin-top: 35px;
+        color: #ccc;
+      }
+      #suggestions a {
+        color: #666666;
+        font-weight: 200;
+        font-size: 14px;
+        margin: 0 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>404</h1>
+      <p><strong>There isn't a GitHub Pages site here.</strong></p>
+
+      <p>
+        If you're trying to publish one,
+        <a href="https://help.github.com/pages/">read the full documentation</a>
+        to learn how to set up <strong>GitHub Pages</strong>
+        for your repository, organization, or user account.
+      </p>
+
+      <div id="suggestions">
+        <a href="https://githubstatus.com">GitHub Status</a> &mdash;
+        <a href="https://twitter.com/githubstatus">@githubstatus</a>
+      </div>
+
+      <a href="/" class="logo logo-img-1x">
+        <img width="32" height="32" title="" alt="" src="data:image/png;base64,i
+VBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZ
+VJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/I
+iBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6b
+nM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wM
+i8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZ
+y8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIge
+G1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL
+25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20ve
+GFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wI
+ENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTZCRDY3REIzRjAxMUUyQ
+UQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTZCRDY3RUIzRjAxMUUyQ
+UQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAua
+WlkOkUxNkJENjdCQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZ
+GlkOkUxNkJENjdDQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L
+3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SM9MCAAAA+5JREFUeNrEV11Ik
+1EY3s4+ddOp29Q5b0opCgKFsoKoi5Kg6CIhuwi6zLJLoYLopq4qsKKgi4i6CYIoU/q5iDAKs6syoS76I
+RWtyJ+p7cdt7sf1PGOD+e0c3dygAx/67ZzzPM95/877GYdHRg3ZjMXFxepQKNS6sLCwJxqNNuFpiMfjV
+s4ZjUa/pmmjeD6VlJS8NpvNT4QQ7mxwjSsJiEQim/1+/9lgMHgIr5ohuxG1WCw9Vqv1clFR0dCqBODEl
+V6v90ogEDjGdYbVjXhpaendioqK07CIR7ZAqE49PT09BPL2PMgTByQGsYiZlQD4uMXtdr+JxWINhgINY
+hGT2MsKgMrm2dnZXgRXhaHAg5jEJodUAHxux4LudHJE9RdEdA+i3Juz7bGHe4mhE9FNrgwBCLirMFV9O
+kh5eflFh8PR5nK5nDabrR2BNJlKO0T35+Li4n4+/J+/JQCxhmu5h3uJoXNHPbmWZAHMshWB8l5/ipqam
+maAf0zPDDx1ONV3vurdidqwAQL+pEc8sLcAe1CCvQ3YHxIW8Pl85xSWNC1hADDIv0rIE/o4J0k3kww4x
+SlwIhcq3EFFOm7KN/hUGOQkt0CFa5WpNJlMvxBEz/IVQAxg/ZRZl9wiHA63yDYieM7DnLP5CiAGsC7I5
+sgtYKJGWe2A8seFqgFJrJjEPY1Cn3pJ8/9W1e5VWsFDTEmFrBcoDhZJEQkXuhICMyKpjhahqN21hRYAT
+KfUOlDmkygrR4o4C0VOLGJKrOITKB4jijzdXygBKixyC5TDQdnk/Pz8qRw6oOWGlsTKGOQW6OH6FBWsy
+ePxdOXLTgxiyebILZCjz+GLgMIKnXNzc49YMlcRdHXcSwxFVgTInQhC9G33UhNoJLuqq6t345p9y3eUy
+8OTk5PjAHuI9uo4b07FBaOhsu0A4Unc+T1TU1Nj3KsSSE5yJ65jqF2DDd8QqWYmAZrIM2VlZTdnZmb6A
+bpdV9V6ec9znf5Q7HjYumdRE0JOp3MjitO4SFa+cZz8Umqe3TCbSLvdfkR/kWDdNQl5InuTcysOcpFT3
+5ZrbBxx4p3JAHlZVVW1D/634VRt+FvLBgK/v5LV9WS+10xMTEwtRw7XvqOL+e2Q8V3AYIOIAXQ26/heW
+VnZCVfcyKHg2CBgTpmPmjYM8l24GyaUHyaIh7XwfR9ErE8qHoDfn2LTNAVC0HX6MFcBIP8Bi+6F6cdW/
+DICkANRfx99fEYFQ7Nph5i/uQiA214gno7K+guhaiKg9gC62+M8eR7XsBsYJ4ilam60Fb7r7uAj8wFyu
+wM1oIOWgfmDy6RXEEQzJMPe23DXrVS7rtyD3Df8z/FPgAEAzWU5Ku59ZAUAAAAASUVORK5CYII=">
+      </a>
+
+      <a href="/" class="logo logo-img-2x">
+        <img width="32" height="32" title="" alt="" src="data:image/png;base64,i
+VBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZ
+VJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/I
+iBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6b
+nM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wM
+i8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZ
+y8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIge
+G1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL
+25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20ve
+GFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wI
+ENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQUM1QkUxRUI0MUMxMUUyQ
+UQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQUM1QkUxRkI0MUMxMUUyQ
+UQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAua
+WlkOkUxNkJENjdGQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZ
+GlkOkUxNkJENjgwQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L
+3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hfPRaQAAB6lJREFUeNrsW2mME
+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">
+      </a>
+    </div>
+  </body>
+</html>
 
 
 
@@ -204,6 +372,41 @@ List the contents of your home directory to prove that the directory was created
 
 Copy and paste the output below.
 ----------
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ mygoogle.html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ stuff/
 
 
 
@@ -220,7 +423,7 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+nothing happened
 
 ==========
 14. Go up one directory back into your home directory.
@@ -233,7 +436,7 @@ List the files in the directory you're currently in (which should be home).
 Copy and paste the output below.
 ----------
 
-
+stuff/
 
 
 ==========
@@ -245,7 +448,7 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+stuff/
 
 
 
@@ -260,7 +463,7 @@ Copy and paste the output of your this below.
 ----------
 
 
-
+stuff.tar.gz
 
 
 ==========
@@ -270,3 +473,5 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
+
+stuff/
